@@ -27,3 +27,4 @@ env/
 # IDE
 .vscode/settings.json
 .idea/
+.conda/

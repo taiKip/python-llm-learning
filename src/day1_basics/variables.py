@@ -96,3 +96,49 @@ print(f"\n{len(care_notes)} notes remaining")
 
 # Check membership
 print("Refused breakfast" in care_notes)  # False - we removed it
+
+# DICTIONARIES
+# Key-value pairs - like Java's  Hashmap
+
+worker = {
+    "id": "worker-123",
+    "name": "Tarus",
+    "skills": ["dementia_care","hoist_trained","wound_care"],
+    "on_time_rate": 0.98,
+    "available": True
+}
+
+# Access values
+print(worker["name"])
+print(worker.get("email"))
+print(worker.get("email","no email on file")) # with default
+
+# Add and update
+worker["email"]  = "tarus@example.com"
+worker["on_time_rate"] =0.99 # update existing
+
+# Check if key exists
+print("skills" in worker)
+print("phone" in worker)
+
+#Loop over keys and values
+
+for key, value in worker.items():
+    print(f"  {key}:{value}")
+
+
+# Nested dict 
+shift_match = {
+    "shift_id": "shift-456",
+    "top_match":{
+        "worker_id": "worker-123",
+        "score":87,
+        "reason": "8 prior shifts with recipient · 4.2km · 98% on time ",
+        "confidence_flage":False
+    },
+    "model_version":"shift-matching-v4.2.1"
+}
+
+# Access nested values
+print(shift_match["top_match"]["score"])
+print(shift_match["top_match"]["reason"])
