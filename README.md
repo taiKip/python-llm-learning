@@ -1,6 +1,6 @@
 # Python LLM Learning
 
-Python fundamentals through to LLM API integration — built alongside COMP6012 Large Language Models and Applications at Adelaide University.
+Python fundamentals through to LLM API integration
 
 ## Structure
 - `src/day1_basics/` — variables, types, strings, lists, dicts
