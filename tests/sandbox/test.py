@@ -1,0 +1,1 @@
+!pip install -q datasets transformers evaluate scikit-learn
