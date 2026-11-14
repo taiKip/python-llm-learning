@@ -19,7 +19,6 @@ env/
 
 # Jupyter
 .ipynb_checkpoints/
-*.ipynb
 
 # macOS
 .DS_Store
@@ -28,3 +27,6 @@ env/
 .vscode/settings.json
 .idea/
 .conda/
+
+# Data files
+*.npz
